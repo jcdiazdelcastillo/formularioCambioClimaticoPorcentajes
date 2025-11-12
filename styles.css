@@ -3,6 +3,7 @@ body {
     font-family: Arial;
     background-color: #f4f4f4;
     width: 100%;
+    /*width: 1512px;*/
     margin: 0;
     height: 730px;
 }
@@ -124,4 +125,5 @@ input, select {
 footer {
     clear: both;
     color: white;
+
 }
