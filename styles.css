@@ -1,0 +1,127 @@
+/*ARREGLAR ASSIDE, ELEMENTOS DEL FORM Y ELEMENTOS DEL INTERIOR DEL ASSIDE. CALCULARLO CON RESPECTO A SU PADRE, NO CON RESPECTO AL BODY*/
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    width: 100%;
+    margin: 0;
+    height: 730px;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #2E8B57;
+    width: 96.07%;   /* 1468 / 1528 * 100 */
+    height: 40px;
+    padding: 1.96%;  /* 30 / 1528 * 100 */
+}
+
+header {
+    position: relative;
+}
+
+header a {
+    position: absolute;
+    top: 40px;
+    right: 4.58%;    /* 70 / 1528 * 100 */
+    text-decoration: none;
+}
+
+#inicioSesion:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+header h1 {
+    margin: 0;
+    color: #f4f4f4;
+}
+
+nav {
+    background-color: lightblue;
+    padding: 1.31%;   /* 20 / 1528 * 100 */
+    text-align: center;
+    width: 97.38%;    /* 1488 / 1528 * 100 */
+    height: 20px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 1.96%;  /* 30 / 1528 * 100 */
+    width: 5.56%;     /* 85 / 1528 * 100 */
+    height: 20px;
+    color: purple;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#enlaceOnu {
+    width: 13.09%;    /* 200 / 1528 * 100 */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    padding: 1.96%;     /* 30 / 1528 * 100 */
+    width: 19.63%;      /* 300 / 1528 * 100 */
+    min-width: 19.63%;  /* 300 / 1528 * 100 */
+    height: 410px;
+    background-color: aqua;
+    float: left;
+    position: relative;
+    overflow:auto; /*para q me salga scroll lateral en el asside y q no se salga el texto*/
+}
+
+aside img,
+aside p {
+    width: 100%;
+}
+
+main {
+    width: 73.83%;    /* 1128 / 1528 * 100 */
+    height: 430px;
+    float: left;
+    padding: 1.31%;   /* 20 / 1528 * 100 */
+}
+
+form {
+    width: 44.32%;    /* 500 / 1128 * 100 */
+    background-color: antiquewhite;
+    padding: 1.77%;   /* 20 / 1128 * 100 */
+    margin: auto;
+    border-radius: 10px;
+}
+
+form div {
+    margin-bottom: 4%; /* 20 / 500 * 100 */
+}
+
+input, select {
+    border-radius: 5px;
+    margin-left: 6%; /* 30 / 500 * 100 */
+    padding: 0.26% 0.46%; /* 4 / 1528 y 7 / 1528 */
+}
+
+#email {
+    width: 60%;    /* 300 / 500 * 100 */
+}
+
+#enviar {
+    background-color: #2E8B57;
+    display: block;
+    color: white;
+    margin: auto;
+    width: 20%;     /* 100 / 500 * 100 */
+    padding: 0 2%; /* 10 / 500 * 100 */
+}
+
+#masInfo {
+    position: absolute;
+    bottom: 40px;
+}
+
+footer {
+    clear: both;
+    color: white;
+}
